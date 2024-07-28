@@ -139,7 +139,7 @@ class LimitHandler:
             return
         x = self._relx_to_x(percent)
         dt = self.width//2
-        lower, upper = self._bounded(x-dt, x+dt)
+        lower, upper = x-dt, x+dt
         self._set_xlim(lower, upper)
         
     def set_xlim_to_newest(self):
