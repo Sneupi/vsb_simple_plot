@@ -8,7 +8,7 @@ class GUI(tk.Tk):
         super().__init__()
         self.graph = TkGraph(self)
         self.graph.place(relx=0, rely=0, relwidth=1, relheight=0.9)
-        self.selector = FileSelector(self)
+        self.selector = FileSelector(self, text="Logfile")
         self.selector.place(relx=0, rely=0.9, relwidth=1, relheight=0.05)
         self.generate_button = tk.Button(self, text="Generate Graph", bg="light green")
         self.generate_button.place(relx=0, rely=0.95, relwidth=1, relheight=0.05)
